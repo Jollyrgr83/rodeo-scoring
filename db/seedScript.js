@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-// const connectionUrl = "mongodb+srv://Cluster09960:bmVkUHVaTGto@cluster09960.w2t3fr0.mongodb.net/?retryWrites=true&w=majority";
-
 const connectionUrl = process.env.ATLAS_CONNECTION_STRING_1 + process.env.ATLAS_USERNAME + process.env.ATLAS_CONNECTION_STRING_2 + process.env.ATLAS_PASSWORD + process.env.ATLAS_CONNECTION_STRING_3;
 
 mongoose.connect(connectionUrl);
