@@ -42,7 +42,7 @@ app.use((er, req, res, next) => {
         return next(er);
     }
     res.status(er.code || 500);
-    res.json({message: er.message + "===testing" || "test - An unknown error occurred!", er: er});
+    res.json({message: er.message + " An unknown error occurred!", er: er});
 })
 
 mongoose.connect(connectionUrl).then(
