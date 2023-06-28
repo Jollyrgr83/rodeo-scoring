@@ -1,11 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const connectionUrl = "mongodb+srv://Cluster09960:bmVkUHVaTGto@cluster09960.w2t3fr0.mongodb.net/?retryWrites=true&w=majority";
+const connectionUrl = process.env.ATLAS_CONNECTION_STRING_1 + process.env.ATLAS_USERNAME + process.env.ATLAS_CONNECTION_STRING_2 + process.env.ATLAS_PASSWORD + process.env.ATLAS_CONNECTION_STRING_3;
 
 const app = express();
-
-const Err = require("./models/HttpError");
 
 /* For parsing application/json */
 app.use(express.json());
@@ -51,4 +49,4 @@ mongoose.connect(connectionUrl).then(
     er => console.log("connection failed", er)
 );
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
