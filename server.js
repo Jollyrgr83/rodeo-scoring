@@ -15,17 +15,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('client/build'));
 // app.use(express.static(path.join("client", "build")));
 
-app.use((req, res, next) => {
-    if (!res.headersSent) {
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-        res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS, PATCH, DELETE");
-    }
-    if (req.method === "OPTIONS") {
-        return res.status(200).end();
-    }
-    next();
-});
+/* headers to resolve CORS issues in development */
+// app.use((req, res, next) => {
+//     if (!res.headersSent) {
+//         res.setHeader("Access-Control-Allow-Origin", "*");
+//         res.setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+//         res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, OPTIONS, PATCH, DELETE");
+//     }
+//     if (req.method === "OPTIONS") {
+//         return res.status(200).end();
+//     }
+//     next();
+// });
 
 const routes = require("./routes");
 app.use("/", routes);
