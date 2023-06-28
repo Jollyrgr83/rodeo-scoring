@@ -1,0 +1,27 @@
+.button {
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 1px 1px 3px black;
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.button:hover {
+    cursor: pointer;
+    outline: none;
+    box-shadow: 3px 3px 6px black;
+}
+.button:active {
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0 black;
+}
+.button:focus {
+    cursor: pointer;
+    outline: none;
+}

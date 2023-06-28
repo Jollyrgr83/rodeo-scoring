@@ -1,0 +1,23 @@
+.nav-icon {
+    color: #275937;
+    font-size: 24px;
+    cursor: pointer;
+}
+.nav-icon:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.nav-icon-title {
+    color: #275937;
+    margin-right: 25px;
+}
+.nav-icon > * {
+    pointer-events: none;
+}
+.nav-icon-margin {
+    margin: 25px 15px 15px 15px;
+}
+/* prevents mouse clicks on child elements for vector icons */
+svg > * {
+    pointer-events: none;
+}

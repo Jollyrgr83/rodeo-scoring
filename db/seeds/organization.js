@@ -1,0 +1,17 @@
+module.exports = [
+    {name: "Virginia", coopBoolean: false},
+    {name: "Massachusetts", coopBoolean: false},
+    {name: "Carolina", coopBoolean: false},
+    {name: "Pennsylvania", coopBoolean: false},
+    {name: "New York", coopBoolean: false},
+    {name: "Ohio", coopBoolean: false},
+    {name: "Midwest", coopBoolean: false},
+    {name: "Texas", coopBoolean: false},
+    {name: "Denver", coopBoolean: true},
+    {name: "Miami", coopBoolean: true},
+    {name: "San Francisco", coopBoolean: true},
+    {name: "Seattle", coopBoolean: true},
+    {name: "Phoenix", coopBoolean: true},
+    {name: "Salt Lake City", coopBoolean: true},
+    {name: "San Diego", coopBoolean: true},
+];

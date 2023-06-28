@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+/* display classes */
+.hide {
+    display: none;
+}
+.show-block {
+    display: block;
+}
+.show-grid {
+    display: grid;
+}
+/* alignment classes */
+.ctr-x {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
+.ctr-text {
+    text-align: center;
+}
+.grid-one {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.grid-six {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-ctr-x {
+    justify-content: center;
+}
+.grid-ctr-y {
+    align-content: center;
+}
+/* width classes */
+.small {
+    width: 25%;
+}
+.half {
+    width: 60%;
+}
+.large {
+    width: 79%;
+}
+.full {
+    width: 90%;
+}
+/* page components */
+.container {
+    background-color: #9bb4a5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    margin: 15px;
+    padding: 15px 0;
+    width: 375px;
+    max-width: 90%;
+}
+
+.subtitle {
+    color: #275937;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    width: 90%;
+    text-align: center;
+}
+.text {
+    color: #275937;
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+}
+.no-link {
+    text-decoration: none;
+}
+/* colors */
+.red {
+    background-color: #C00000;
+    color: white !important;
+}
+.blue {
+    background-color: #004b9b;
+    color: white !important;
+}
+.clear {
+    background-color: #9bb4a5;
+    color: #275937;
+}
+.green {
+    background-color: #275937;
+    color: white;
+}
+/* user input elements */
+input:enabled,
+input:focus,
+input:active {
+    display: block;
+    background-color: white;
+    color: #275937;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
+    padding: 5px;
+    outline: none;
+    height: 35px;
+}
+select:enabled,
+select:focus,
+select:active {
+    display: block;
+    background-color: white;
+    color: #275937;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    height: 35px;
+}
+/* row container for square button rows */
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+/* print link/button styling on reports page */
+#print {
+    margin: 25px auto;
+    padding: 10px;
+}
+/* report page results sub container */
+.result-container {
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 90%;
+}

@@ -1,0 +1,17 @@
+module.exports = [
+    {name: "100 Meter Run"},
+    {name: "Long Jump"},
+    {name: "Shot Put"},
+    {name: "High Jump"},
+    {name: "400 Meter Run"},
+    {name: "110 Meter Hurdles"},
+    {name: "Discus Throw"},
+    {name: "Pole Vault"},
+    {name: "Javelin Throw"},
+    {name: "1500 Meter Run"},
+    {name: "Written Exam"},
+    {name: "Push-up Competition"},
+    {name: "Sit-up Competition"},
+    {name: "Dead-lift"},
+    {name: "Bench Press"},
+];

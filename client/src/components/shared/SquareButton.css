@@ -1,0 +1,31 @@
+.square-button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    margin: 0 0 5px 5px;
+    padding: 0;
+    font-size: 1.4em;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.square-button:hover {
+    cursor: pointer;
+    outline: none;
+    box-shadow: 3px 3px 6px black;
+}
+.square-button:active {
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 0 black;
+}
+.square-button:focus {
+    cursor: pointer;
+    outline: none;
+}
+/* prevents mouse clicks on child elements for vector icons */
+svg > *, .square-button > * {
+    pointer-events: none;
+}
