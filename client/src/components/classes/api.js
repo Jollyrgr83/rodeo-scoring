@@ -4,7 +4,7 @@ class Api {
         this.set();
     }
     set() {
-        this.base = "http://localhost:5000/api";
+        this.base = (process.env.REACT_APP_SERVER_URL === undefined) ? "http://localhost:5000/api" : process.env.REACT_APP_SERVER_URL;
     }
     /* default get all routes */
     get(stub) {
